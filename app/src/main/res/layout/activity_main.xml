@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bereket.ussdbereketaxum.MainActivity"
+    android:background="@drawable/bg">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Phone Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextView"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="70dp
+        "
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/TextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonbal"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignLeft="@+id/buttonrech"
+        android:layout_alignStart="@+id/buttonrech"
+        android:layout_alignRight="@+id/buttonrech"
+        android:layout_alignEnd="@+id/buttonrech"
+        android:background="@android:color/holo_green_dark" />
+
+    <Button
+        android:text="transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttontrn"
+        android:layout_below="@+id/buttonrech"
+        android:layout_alignLeft="@+id/buttonrech"
+        android:layout_alignStart="@+id/buttonrech"
+        android:layout_alignRight="@+id/buttonrech"
+        android:layout_alignEnd="@+id/buttonrech"
+        android:background="@android:color/holo_green_dark" />
+
+    <Button
+        android:text="recharge"
+        android:layout_width="200dp
+        "
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonrech"
+        android:layout_below="@+id/buttonbal"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_green_dark" />
+
+    <Button
+        android:text="call me back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttoncmb"
+        android:layout_below="@+id/buttontrn"
+        android:layout_alignLeft="@+id/buttontrn"
+        android:layout_alignStart="@+id/buttontrn"
+        android:layout_alignRight="@+id/buttontrn"
+        android:layout_alignEnd="@+id/buttontrn"
+        android:background="@android:color/holo_green_dark" />
+
+    <Button
+        android:text="Gebeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttongb"
+        android:layout_below="@+id/buttoncmb"
+        android:layout_alignLeft="@+id/buttoncmb"
+        android:layout_alignStart="@+id/buttoncmb"
+        android:layout_alignRight="@+id/buttoncmb"
+        android:layout_alignEnd="@+id/buttoncmb"
+        android:background="@android:color/holo_green_dark" />
+
+    <Button
+        android:text="credit request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttoncr"
+        android:layout_below="@+id/buttongb"
+        android:layout_alignLeft="@+id/buttongb"
+        android:layout_alignStart="@+id/buttongb"
+        android:layout_alignRight="@+id/buttongb"
+        android:layout_alignEnd="@+id/buttongb"
+        android:background="@android:color/holo_green_dark" />
+
+    <Button
+        android:text="Deactivate"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonbwd"
+        android:layout_below="@+id/buttoncr"
+        android:layout_alignRight="@+id/buttoncr"
+        android:layout_alignEnd="@+id/buttoncr"
+        android:background="@android:color/holo_red_dark" />
+
+    <TextView
+        android:text="Call forwarding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignBottom="@+id/buttonfwd"
+        android:layout_toLeftOf="@+id/buttoncr"
+        android:layout_toStartOf="@+id/buttoncr" />
+
+    <TextView
+        android:text="Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Actvate"
+        android:layout_width="100dp
+        "
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonfwd"
+        android:background="@android:color/holo_green_dark"
+        android:layout_below="@+id/buttoncr"
+        android:layout_toRightOf="@+id/textView" />
+
+    <Button
+        android:text="display phone number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonbwd"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonNo"
+        android:background="@android:color/holo_green_light" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttoncr"
+        android:layout_toRightOf="@+id/buttoncmb"
+        android:layout_toEndOf="@+id/buttoncmb"
+        android:id="@+id/b0" />
+</RelativeLayout>
